@@ -1,0 +1,27 @@
+/* -- paramètre de page ---- */
+body {
+  max-width: 375px;
+  margin: auto;
+  padding: 5px;
+}
+
+/* ---police du site---- */
+@font-face {
+  font-family: "Roboto";
+  src: url("Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "Shrikhand";
+  src: url("Shrikhand/Shrikhand-Regular.ttf");
+}
+
+h1 {
+  font-family: "Shrikhand";
+  text-align: center;
+}
+.logo h2 {
+  font-family: "Shrikhand";
+}
+h2 {
+  font-family: "Roboto";
+}
