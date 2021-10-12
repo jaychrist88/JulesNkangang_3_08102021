@@ -22,6 +22,52 @@ h1 {
 .logo h2 {
   font-family: "Shrikhand";
 }
-h2 {
+h2,
+h3,
+h4,
+h5,
+p {
   font-family: "Roboto";
+}
+
+/*--section explorer nos restaurants--*/
+.barrelocalisation {
+  background-color: gainsboro;
+  width: 375px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.barrelocalisation i {
+  padding-right: 20px;
+}
+.explorer {
+  background-color: rgb(236, 235, 235);
+  width: 375px;
+  height: 289px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.explorer h2 {
+  padding-top: 45px;
+}
+.boutonexplorer {
+  height: 50px;
+  width: 218px;
+  display: flex;
+  justify-content: center;
+  background-color: #ff79da;
+  border-radius: 25px;
+  align-items: center;
+}
+.boutonexplorer {
+  font-family: Roboto;
+  color: white;
+  margin-top: 7px;
+}
+.explorer p {
+  margin-top: -5px;
 }
