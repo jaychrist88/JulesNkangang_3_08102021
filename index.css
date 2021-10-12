@@ -19,7 +19,8 @@ h1 {
   font-family: "Shrikhand";
   text-align: center;
 }
-.logo h2 {
+.logo h2,
+sectionrestaurant h2 {
   font-family: "Shrikhand";
 }
 h2,
@@ -27,7 +28,12 @@ h3,
 h4,
 h5,
 p,
-.circleicon1 {
+.circleicon1,
+.circleicon2,
+.circleicon3,
+.newtext,
+.carte p,
+.carte h3 {
   font-family: "Roboto";
 }
 
@@ -132,4 +138,68 @@ p,
   justify-content: center;
   margin-left: -30%;
   margin-right: 25px;
+}
+
+/*--section restaurants*/
+
+#sectionrestaurant {
+  display: flex;
+
+  flex-direction: column;
+  width: 375px;
+  height: 1230px;
+  background-color: rgb(246, 246, 246);
+}
+#sectionrestaurant h2 {
+  padding-top: 63px;
+  padding-left: 20px;
+}
+.carte {
+  width: 335px;
+  height: 253px;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 1.24rem;
+  box-shadow: 0 0 16px #0000002e;
+}
+.carte img {
+  width: 335px;
+  height: 176px;
+  object-fit: cover;
+  background: no-repeat;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.menilmontant {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.carte h3 {
+  margin: 5px 0 -10px 10px;
+  color: black;
+}
+.carte p {
+  padding-left: 10px;
+  color: black;
+}
+.newtext {
+  color: rgb(38, 158, 128);
+  margin-left: 220px;
+  margin-top: -240px;
+  width: 80px;
+  height: 31px;
+  background-color: rgb(153, 226, 208);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+.carte i {
+  margin-left: 290px;
+  margin-top: -50px;
+}
+.carte a {
+  text-decoration: none;
 }
