@@ -26,13 +26,14 @@ h2,
 h3,
 h4,
 h5,
-p {
+p,
+.circleicon1 {
   font-family: "Roboto";
 }
 
 /*--section explorer nos restaurants--*/
 .barrelocalisation {
-  background-color: gainsboro;
+  background-color: rgb(234, 234, 234);
   width: 375px;
   height: 50px;
   display: flex;
@@ -43,7 +44,7 @@ p {
   padding-right: 20px;
 }
 .explorer {
-  background-color: rgb(236, 235, 235);
+  background-color: rgb(246, 246, 246);
   width: 375px;
   height: 289px;
   text-align: center;
@@ -59,7 +60,7 @@ p {
   width: 218px;
   display: flex;
   justify-content: center;
-  background-color: #ff79da;
+  background-color: rgb(220, 110, 218);
   border-radius: 25px;
   align-items: center;
 }
@@ -74,14 +75,26 @@ p {
 
 /*--section fonctionnement--*/
 
-.choixrestau {
+.choixrestau,
+.compomenu {
   display: flex;
   align-items: center;
   height: 78px;
   width: 329px;
   justify-content: center;
-  background-color: gainsboro;
+  background-color: rgb(246, 246, 246);
   border-radius: 25px;
+  margin-bottom: 25px;
+}
+.degustrestau {
+  display: flex;
+  align-items: center;
+  height: 78px;
+  width: 329px;
+  justify-content: center;
+  background-color: rgb(245, 237, 255);
+  border-radius: 25px;
+  margin-bottom: 25px;
 }
 #sectionfonctionnement {
   display: flex;
@@ -89,5 +102,34 @@ p {
   flex-direction: column;
 }
 #sectionfonctionnement h2 {
-  margin-left: -150px;
+  margin: 55px 0 32px -150px;
+}
+.circleicon1,
+.circleicon3 {
+  height: 20px;
+  width: 20px;
+  color: white;
+  background-color: rgb(147, 86, 220);
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  margin-left: -30%;
+}
+.choixrestau i,
+.choixrestau p,
+.compomenu p,
+.degustrestau i,
+.degustrestau p {
+  margin-left: 20px;
+}
+.circleicon2 {
+  height: 20px;
+  width: 20px;
+  color: white;
+  background-color: rgb(147, 86, 220);
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  margin-left: -30%;
+  margin-right: 25px;
 }
