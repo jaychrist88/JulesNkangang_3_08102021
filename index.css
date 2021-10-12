@@ -71,3 +71,23 @@ p {
 .explorer p {
   margin-top: -5px;
 }
+
+/*--section fonctionnement--*/
+
+.choixrestau {
+  display: flex;
+  align-items: center;
+  height: 78px;
+  width: 329px;
+  justify-content: center;
+  background-color: gainsboro;
+  border-radius: 25px;
+}
+#sectionfonctionnement {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#sectionfonctionnement h2 {
+  margin-left: -150px;
+}
