@@ -33,7 +33,8 @@ p,
 .circleicon3,
 .newtext,
 .carte p,
-.carte h3 {
+.carte h3,
+#piedpage p {
   font-family: "Roboto";
 }
 
@@ -144,17 +145,16 @@ p,
 
 #sectionrestaurant {
   display: flex;
-
   flex-direction: column;
   width: 375px;
   height: 1230px;
   background-color: rgb(246, 246, 246);
 }
 #sectionrestaurant h2 {
-  padding-top: 63px;
-  padding-left: 20px;
+  margin-top: 60px;
+  margin-left: 20px;
 }
-.carte {
+.cartemenil {
   width: 335px;
   height: 253px;
   display: flex;
@@ -163,7 +163,7 @@ p,
   border-radius: 1.24rem;
   box-shadow: 0 0 16px #0000002e;
 }
-.carte img {
+.cartemenil img {
   width: 335px;
   height: 176px;
   object-fit: cover;
@@ -176,11 +176,11 @@ p,
   flex-direction: column;
   align-items: center;
 }
-.carte h3 {
+.cartemenil h3 {
   margin: 5px 0 -10px 10px;
   color: black;
 }
-.carte p {
+.cartemenil p {
   padding-left: 10px;
   color: black;
 }
@@ -196,10 +196,175 @@ p,
   align-items: center;
   border-radius: 3px;
 }
-.carte i {
+.cartemenil i {
   margin-left: 290px;
   margin-top: -50px;
 }
-.carte a {
+.cartemenil a {
   text-decoration: none;
+}
+
+.cartecharonne {
+  width: 335px;
+  height: 253px;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 1.24rem;
+  box-shadow: 0 0 16px #0000002e;
+}
+.cartecharonne img {
+  width: 335px;
+  height: 176px;
+  object-fit: cover;
+  background: no-repeat;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.charonne {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 220px;
+}
+.cartecharonne h3 {
+  margin: 5px 0 -10px 10px;
+  color: black;
+}
+.cartecharonne p {
+  padding-left: 10px;
+  color: black;
+}
+.newtext {
+  color: rgb(38, 158, 128);
+  margin-left: 220px;
+  margin-top: -240px;
+  width: 80px;
+  height: 31px;
+  background-color: rgb(153, 226, 208);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+.cartecharonne i {
+  margin-left: 290px;
+  margin-top: -50px;
+  color: rgb(181, 97, 219);
+}
+.cartecharonne a {
+  text-decoration: none;
+}
+
+.cartecite {
+  width: 335px;
+  height: 253px;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 1.24rem;
+  box-shadow: 0 0 16px #0000002e;
+}
+.cartecite img {
+  width: 335px;
+  height: 176px;
+  object-fit: cover;
+  background: no-repeat;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.citerouge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 220px;
+}
+.cartecite h3 {
+  margin: 5px 0 -10px 10px;
+  color: black;
+}
+.cartecite p {
+  padding-left: 10px;
+  color: black;
+}
+.cartecite i {
+  margin-left: 290px;
+  margin-top: -50px;
+}
+.cartecite a {
+  text-decoration: none;
+}
+
+.cartemericourt {
+  width: 335px;
+  height: 253px;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 1.24rem;
+  box-shadow: 0 0 16px #0000002e;
+}
+.cartemericourt img {
+  width: 335px;
+  height: 176px;
+  object-fit: cover;
+  background: no-repeat;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.mericourt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+.cartemericourt h3 {
+  margin: 5px 0 -10px 10px;
+  color: black;
+}
+.cartemericourt p {
+  padding-left: 10px;
+  color: black;
+}
+.cartemericourt i {
+  margin-left: 290px;
+  margin-top: -50px;
+}
+.cartemericourt a {
+  text-decoration: none;
+}
+
+/*--Footer--*/
+
+#piedpage {
+  width: 375px;
+  height: 198px;
+  background-color: rgb(53, 53, 53);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+.logo h2,
+.line1,
+.line2,
+.line3,
+.line4 {
+  color: white;
+  margin-bottom: -5px;
+}
+#piedpage i {
+  margin-right: 15px;
+}
+.logo {
+  margin-top: -30px;
+}
+.line1,
+.line2,
+.line3,
+.line4 {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  margin-bottom: -20px;
 }
