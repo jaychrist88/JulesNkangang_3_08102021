@@ -1,23 +1,7 @@
+@charset "UTF-8";
 /*--variables--*/
-$color-text: #4d4d4d;
-$color-primary: #9356dc;
-$color-secondary: #dc6eda;
-$color-tertiary: #99e2d0;
-$color-background: #f4f4f4;
-$color-text: #4d4d4d;
-$white: #ffffff;
-
 /*--mixins--*/
-@mixin shadow($value: 0%) {
-  box-shadow: 3px 3px 14px 0px darken(#a7a7a7, $value);
-}
-@mixin flex {
-  display: flex;
-  justify-content: center;
-}
-
 /* -- paramètre de page ---- */
-
 html {
   scroll-behavior: smooth;
 }
@@ -28,7 +12,6 @@ body {
 }
 
 /* ---police du site---- */
-
 @font-face {
   font-family: "Roboto";
   src: url("Roboto/Roboto-Regular.ttf");
@@ -37,16 +20,13 @@ body {
   font-family: "Shrikhand";
   src: url("Shrikhand/Shrikhand-Regular.ttf");
 }
-
 /*----header---*/
-
 h1 {
   font-family: "Shrikhand";
   text-align: center;
 }
 
 /*--section explorer nos restaurants--*/
-
 .barrelocalisation {
   display: flex;
   flex-direction: row;
@@ -55,15 +35,13 @@ h1 {
   height: 50px;
   background: linear-gradient(180deg, #c5c5c5 0%, #eaeaea 5%);
   padding: 15px;
-
-  &_icon {
-    padding-right: 20px;
-  }
-
-  &_text {
-    color: $color-text;
-    font-weight: bold;
-  }
+}
+.barrelocalisation_icon {
+  padding-right: 20px;
+}
+.barrelocalisation_text {
+  color: #4d4d4d;
+  font-weight: bold;
 }
 
 .explorer {
@@ -73,37 +51,30 @@ h1 {
   align-items: center;
   padding: 25px 0 25px 0;
   background-color: #f6f6f6;
-
-  &_titre {
-    font-size: 150%;
-    font-weight: bold;
-    padding-top: 45px;
-    text-align: center;
-  }
-
-  &_sous-titre {
-    margin: 25px;
-    text-align: center;
-  }
-
-  &_bouton {
-    border-radius: 30px;
-    @include flex; 
-    background: $color-secondary;
-    background: linear-gradient(
-      175deg,
-      $color-secondary 0%,
-      $color-primary 120%
-    );
-    padding: 10px;
-    width: 220px;
-    @include shadow;
-    color:$white
-  }
+}
+.explorer_titre {
+  font-size: 150%;
+  font-weight: bold;
+  padding-top: 45px;
+  text-align: center;
+}
+.explorer_sous-titre {
+  margin: 25px;
+  text-align: center;
+}
+.explorer_bouton {
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  background: #dc6eda;
+  background: linear-gradient(175deg, #dc6eda 0%, #9356dc 120%);
+  padding: 10px;
+  width: 220px;
+  box-shadow: 3px 3px 14px 0px #a7a7a7;
+  color: #ffffff;
 }
 
 /*--section fonctionnement--*/
-
 /*--section fonctionnement--*/
 .choixrestau,
 .compomenu {
@@ -361,7 +332,6 @@ h1 {
 
 /*--Footer--*/
 #piedpage {
- 
   height: 198px;
   background-color: #353535;
   display: flex;
@@ -396,4 +366,4 @@ h1 {
   margin-bottom: -20px;
 }
 
-
+/*# sourceMappingURL=index.css.map */
