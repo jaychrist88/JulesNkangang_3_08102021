@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "dependencies": {
+    "sass": "^1.43.3"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,8 +19,5 @@
   "bugs": {
     "url": "https://github.com/jaychrist88/JulesNkangang_3_08102021/issues"
   },
-  "homepage": "https://github.com/jaychrist88/JulesNkangang_3_08102021#readme",
-  "dependencies": {
-    "sass": "^1.43.2"
-  }
+  "homepage": "https://github.com/jaychrist88/JulesNkangang_3_08102021#readme"
 }
