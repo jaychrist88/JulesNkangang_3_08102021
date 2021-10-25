@@ -6,19 +6,16 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-  margin: 2%;
-}
+
 
 /* ---police du site---- */
 @font-face {
   font-family: "Roboto";
-  src: url("Roboto/Roboto-Regular.ttf");
+  src: url("fonts/Roboto/Roboto-Regular.ttf");
 }
 @font-face {
   font-family: "Shrikhand";
-  src: url("Shrikhand/Shrikhand-Regular.ttf");
+  src: url("fonts/Shrikhand/Shrikhand-Regular.ttf");
 }
 /*----header---*/
 h1 {
