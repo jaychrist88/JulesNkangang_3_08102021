@@ -1,35 +1,6 @@
-@import "./_variables";
-@import "./_mixins";
-@import "./_breakpoints";
-@import "./_animations";
-@import "./_base";
-@import "./_header";
-@import "./_home";
-@import "./_restaurants";
-@import "./_footer";
+/* --page d'accueil-- */
 
-/* -- paramètre de page ---- */
-
-html {
-  scroll-behavior: smooth;
-}
-
-/* ---police du site---- */
-
-body {
-  font-family: "Roboto";
-}
-
-/*----header---*/
-
-h1 {
-  font-family: "Shrikhand";
-  display: flex;
-  justify-content: center;
-  padding: 20px 0 10px 0;
-}
-
-/*--section explorer nos restaurants--*/
+/* Location Section */
 .location {
   display: flex;
   flex-direction: row;
@@ -47,6 +18,7 @@ h1 {
   }
 }
 
+/* Explore Section */
 .explore {
   display: flex;
   flex-direction: column;
@@ -85,8 +57,7 @@ h1 {
   }
 }
 
-/*--section fonctionnement--*/
-
+/* How It Works Section */
 .list-header {
   display: flex;
   justify-content: left;
@@ -157,7 +128,7 @@ h1 {
   }
 }
 
-/* Section Restaurants */
+/* Restaurants Section */
 
 .restaurants {
   margin: 0px;
@@ -239,41 +210,11 @@ h1 {
 
     &_icon {
       @include heart-icon;
-      margin-left: -50px;
 
       &-full {
         @include heart-icon;
         @include heart-hover;
-        margin-left: -50px;
       }
     }
-  }
-}
-
-/* Pied de page */
-
-.footer-container {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  padding: 20px;
-  background-color: darken($color-background, 70%);
-
-  &_logo {
-    font-family: "Shrikhand", cursive;
-    color: #f4f4f4;
-    font-size: 140%;
-    padding-bottom: 15px;
-  }
-
-  &_link {
-    text-decoration: none;
-    padding-top: 10px;
-    color: $white;
-  }
-
-  &_icon {
-    padding-right: 15px;
-    width: 15px;
   }
 }

@@ -1,0 +1,27 @@
+/*--section pied de page--*/
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 20px;
+  background-color: darken($color-background, 70%);
+
+  &_logo {
+    font-family: "Shrikhand", cursive;
+    color: #f4f4f4;
+    font-size: 140%;
+    padding-bottom: 15px;
+  }
+
+  &_link {
+    text-decoration: none;
+    padding-top: 10px;
+    color: $white;
+  }
+
+  &_icon {
+    padding-right: 15px;
+    width: 15px;
+  }
+}

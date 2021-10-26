@@ -1,0 +1,15 @@
+// /*--section header--*/
+
+.logo {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 10px 0;
+  
+    &_icon {
+      position: absolute;
+      font-size: 150%;
+      top: 22px;
+      left: 20px;
+      color: initial;
+    }
+  } 
