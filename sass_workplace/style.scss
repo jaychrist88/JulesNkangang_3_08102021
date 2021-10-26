@@ -1,3 +1,6 @@
+@import "./_variables";
+@import "./_mixins";
+
 /* -- paramètre de page ---- */
 
 html {
@@ -6,13 +9,8 @@ html {
 
 /* ---police du site---- */
 
-@font-face {
+body {
   font-family: "Roboto";
-  src: url("fonts/Roboto/Roboto-Regular.ttf");
-}
-@font-face {
-  font-family: "Shrikhand";
-  src: url("fonts/Shrikhand/Shrikhand-Regular.ttf");
 }
 
 /*----header---*/
@@ -38,7 +36,7 @@ h1 {
   }
 
   &_text {
-    color: $color-text;
+    color: #4d4d4d;
     font-weight: bold;
   }
 }
@@ -81,7 +79,6 @@ h1 {
 
 /*--section fonctionnement--*/
 
-/*--section fonctionnement--*/
 .choixrestau,
 .compomenu {
   display: flex;

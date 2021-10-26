@@ -1,0 +1,7 @@
+@mixin shadow($value: 0%) {
+  box-shadow: 3px 3px 14px 0px darken(#a7a7a7, $value);
+}
+@mixin flex {
+  display: flex;
+  justify-content: center;
+}
