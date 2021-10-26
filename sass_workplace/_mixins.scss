@@ -1,7 +1,28 @@
 @mixin shadow($value: 0%) {
   box-shadow: 3px 3px 14px 0px darken(#a7a7a7, $value);
 }
-@mixin flex {
-  display: flex;
-  justify-content: center;
+
+@mixin heart-icon($size: 25px 25px 0 0) {
+  font-size: 150%;
+  cursor: pointer;
+  position: absolute;
+  margin: $size;
+}
+
+@mixin heart-hover {
+  color: transparent;
+  transform: scale(0.3);
+  transition: transform 300ms;
+
+  &:hover {
+    transform: scale(0.86);
+    background: -webkit-linear-gradient(
+      198deg,
+      $color-primary 10%,
+      $color-secondary 49%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
