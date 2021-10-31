@@ -112,7 +112,7 @@ h1 {
   @include tablets {
     flex-direction: row;
     width: 100%;
-    max-width: 1100px;
+    max-width: 1024px;
   }
 
   &_icon {
