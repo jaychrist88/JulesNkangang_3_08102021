@@ -129,8 +129,9 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  margin: 0 auto;
+  font-family: "Roboto";
+  margin: auto;
+  padding: 5px;
 }
 
 .logo {
@@ -172,8 +173,12 @@ body {
   background-color: #f3f3f3;
 }
 .explore_title {
-  font-size: 150%;
+  font-size: 100%;
   font-weight: bold;
+  text-align: center;
+}
+span {
+  display: block;
 }
 .explore_sub-title {
   margin: 25px;
@@ -221,7 +226,7 @@ body {
 @media screen and (min-width: 665px) {
   .instruction-list {
     flex-direction: row;
-    width: 100%;
+    width: 98%;
     max-width: 1024px;
   }
 }
@@ -266,7 +271,7 @@ body {
 
 /* Restaurants Section */
 .restaurants {
-  margin: 0px;
+  margin: auto;
   padding: 40px 10%;
   display: flex;
   flex-direction: row;
@@ -278,7 +283,7 @@ body {
   .restaurants {
     padding: 40px 10%;
     max-width: 1024px;
-    margin: 0 auto;
+    margin: 0 auto 0 auto;
   }
 }
 .restaurants_header {
@@ -610,6 +615,8 @@ h1 {
   font-family: "Shrikhand";
   display: flex;
   justify-content: center;
+  margin: 0;
+  padding-top: 12px;
 }
 
 /*--section explorer nos restaurants--*/
@@ -679,13 +686,13 @@ h1 {
   width: 80%;
   max-width: 500px;
   margin: 0 auto 40px auto;
-  padding: 20px;
+  padding: 20px 0 0 2px;
   list-style-type: none;
 }
 @media screen and (min-width: 665px) {
   .instruction-list {
     flex-direction: row;
-    width: 100%;
+    width: 98%;
     max-width: 1024px;
   }
 }
