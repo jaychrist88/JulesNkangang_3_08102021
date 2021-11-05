@@ -9,6 +9,12 @@
   margin: $size;
 }
 
+@mixin text-overflow {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
 @mixin heart-hover {
   color: transparent;
   transform: scale(0.3);

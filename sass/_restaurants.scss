@@ -110,18 +110,19 @@
     padding: 10px;
     width: 78%;
     transition: width 1s;
-    //@include text-overflow;
+    @include text-overflow;
 
-    > h4:first-child {
+    > p:first-child {
       margin-bottom: 5px;
       margin-top: 0;
-      //@include text-overflow;
+      font-weight: bold;
+      @include text-overflow;
     }
     > p:last-child {
       margin: 0;
       color: $color-text;
       width: 100%;
-      //@include text-overflow;
+      @include text-overflow;
     }
   }
 
@@ -175,6 +176,11 @@
   }
 }
 
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .order-btn {
   color: $white;
   max-width: 120px;
@@ -186,7 +192,7 @@
   background: $color-secondary;
   background: linear-gradient(175deg, $color-secondary 0%, $color-primary 98%);
   padding: 10px;
-  margin: 30px 0 20px 150px;
+
   width: 220px;
   @include shadow;
 
