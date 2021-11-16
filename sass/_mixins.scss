@@ -2,12 +2,36 @@
   box-shadow: 3px 3px 14px 0px darken(#a7a7a7, $value);
 }
 
-@mixin heart-icon($size: 25px 25px 0 0) {
-  font-size: 150%;
-  cursor: pointer;
-  position: absolute;
-  margin: $size;
-}
+@mixin heart-full {
+  font-size: 1.35rem;
+      transform: scaleY(1.02);
+      position: relative;
+      z-index: 1;
+      font-weight: 100 !important;
+      transition: 400ms;
+      color: black;
+
+      &:hover 
+      {
+        color:$color-background;
+      }
+
+      &-full {
+        font-size: 1.35rem;
+        transform: scaleY(1.02);
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        font-weight: 900 !important;
+        z-index: -1;
+        opacity: 0;
+        transition: 600ms;
+        @include heart-gradient;
+      }
+    }
+
 
 @mixin text-overflow {
   white-space: nowrap;
@@ -15,20 +39,20 @@
   overflow: hidden;
 }
 
-@mixin heart-hover {
-  color: transparent;
-  transform: scale(0.3);
-  transition: transform 300ms;
 
-  &:hover {
-    transform: scale(0.86);
-    background: -webkit-linear-gradient(
-      198deg,
-      $color-primary 10%,
-      $color-secondary 49%
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+@mixin heart-gradient {
+  background: rgb(147, 86, 220);
+  background: -webkit-linear-gradient(
+    350deg,
+    rgba(147, 86, 220, 1) 0%,
+    rgba(255, 121, 218, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9356dc",endColorstr="#ff79da",GradientType=1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin green-hover {
+  cursor: pointer;
+  background-color: $color-primary-lighten;
 }

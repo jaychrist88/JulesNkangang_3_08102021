@@ -33,12 +33,11 @@
   }
 
   &_icon {
-    @include heart-icon(5px);
-
-    &-full {
-      @include heart-icon(5px);
-      @include heart-hover;
-    }
+    @include heart-full;
+  }
+  .header-container_icon:hover .header-container_icon-full {
+    opacity: 1;
+    z-index: 1;
   }
 }
 
@@ -192,9 +191,13 @@
   background: $color-secondary;
   background: linear-gradient(175deg, $color-secondary 0%, $color-primary 98%);
   padding: 10px;
-
   width: 220px;
   @include shadow;
+
+  &:hover {
+    color: $color-text;
+    @include shadow(30%);
+  }
 
   & a {
     text-decoration: none;

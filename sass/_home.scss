@@ -1,6 +1,5 @@
-/* --page d'accueil-- */
+/*--Section Localisation--*/
 
-/* Location Section */
 .location {
   display: flex;
   flex-direction: row;
@@ -19,6 +18,7 @@
 }
 
 /* Section explorer */
+
 .explore {
   display: flex;
   flex-direction: column;
@@ -39,6 +39,8 @@
 
   &_button {
     border-radius: 30px;
+    transform: scale(1);
+    transition: transform 400ms;
     background: $color-secondary;
     background: linear-gradient(
       175deg,
@@ -49,10 +51,10 @@
     width: 220px;
     @include shadow;
 
-    &_a {
-      text-decoration: none;
-      color: $white;
-      margin-left: 30px;
+    &:hover {
+      color: $color-text;
+      @include shadow(30%);
+      @include green-hover;
     }
   }
 }
@@ -124,6 +126,11 @@
     &:hover {
       color: $color-text;
       @include shadow(30%);
+      @include green-hover;
+
+      & i {
+        color: $color-primary;
+      }
     }
   }
 }
@@ -143,6 +150,11 @@
     padding: 40px 10%;
     max-width: 1100px;
     margin: 0 auto;
+  }
+  & .heart-container {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
   }
 
   &_header {
@@ -208,13 +220,24 @@
       }
     }
 
-    &_icon {
-      @include heart-icon;
-
-      &-full {
-        @include heart-icon;
-        @include heart-hover;
-      }
+    & .heart-container {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
     }
+
+    &_icon {
+      @include heart-full;
+    }
+    .caption_icon:hover .caption_icon-full {
+      opacity: 1;
+      z-index: 1;
+    }
+  }
+  &:hover {
+    color: $color-text;
+    @include shadow(30%);
   }
 }

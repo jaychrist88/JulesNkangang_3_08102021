@@ -72,6 +72,8 @@ h1 {
 
   &_button {
     border-radius: 30px;
+    transform: scale(1);
+    transition: transform 400ms;
     background: $color-secondary;
     background: linear-gradient(
       175deg,
@@ -247,16 +249,8 @@ h1 {
       }
     }
 
-    &_icon {
-      @include heart-icon;
-      margin-left: -50px;
+    /*coeur à inclure*/
 
-      &-full {
-        @include heart-icon;
-        @include heart-hover;
-        margin-left: -50px;
-      }
-    }
   }
 }
 
