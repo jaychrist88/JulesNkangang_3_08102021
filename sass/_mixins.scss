@@ -4,41 +4,38 @@
 
 @mixin heart-full {
   font-size: 1.35rem;
-      transform: scaleY(1.02);
-      position: relative;
-      z-index: 1;
-      font-weight: 100 !important;
-      transition: 400ms;
-      color: black;
+  transform: scaleY(1.02);
+  position: relative;
+  z-index: 1;
+  font-weight: 100 !important;
+  transition: 400ms;
+  color: black;
 
-      &:hover 
-      {
-        color:$color-background;
-      }
+  &:hover {
+    color: $color-background;
+  }
 
-      &-full {
-        font-size: 1.35rem;
-        transform: scaleY(1.02);
-        position: absolute;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        font-weight: 900 !important;
-        z-index: -1;
-        opacity: 0;
-        transition: 600ms;
-        @include heart-gradient;
-      }
-    }
-
+  &-full {
+    font-size: 1.35rem;
+    transform: scaleY(1.02);
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    font-weight: 900 !important;
+    z-index: -1;
+    opacity: 0;
+    transition: 600ms;
+    @include heart-gradient;
+  }
+}
 
 @mixin text-overflow {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-
 
 @mixin heart-gradient {
   background: rgb(147, 86, 220);

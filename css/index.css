@@ -194,6 +194,8 @@ body {
   box-shadow: 3px 3px 14px 0px #5b5b5b;
   cursor: pointer;
   background-color: #f2eafb;
+  opacity: 1;
+  background: linear-gradient(175deg, #ff79da 20%, #9356dc 98%);
 }
 
 /* section fonctionnement */
@@ -622,6 +624,7 @@ body {
 .order-btn:hover {
   color: #4d4d4d;
   box-shadow: 3px 3px 14px 0px #5b5b5b;
+  background: linear-gradient(175deg, #ff79da 20%, #9356dc 98%);
 }
 .order-btn a {
   text-decoration: none;

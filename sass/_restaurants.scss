@@ -197,6 +197,7 @@
   &:hover {
     color: $color-text;
     @include shadow(30%);
+    background: linear-gradient(175deg, #ff79da 20%, #9356dc 98%);
   }
 
   & a {

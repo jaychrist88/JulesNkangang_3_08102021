@@ -55,6 +55,8 @@
       color: $color-text;
       @include shadow(30%);
       @include green-hover;
+      opacity: 1;
+      background: linear-gradient(175deg, #ff79da 20%, #9356dc 98%);
     }
   }
 }
